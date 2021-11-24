@@ -107,4 +107,26 @@ nav li a:hover {
   font-size: 150px;
   letter-spacing: 15px;
 }
+
+.home-page-footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  padding-left: 20px;
+  margin-top: 110px;
+}
+
+.home-page-footer .footer-places {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (200px)[3];
+      grid-template-columns: repeat(3, 200px);
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 5px;
+}
 /*# sourceMappingURL=style.css.map */

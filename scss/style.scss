@@ -1,4 +1,5 @@
-$main-font: Inter, sans-serif;
+$main-font: Inter,
+sans-serif;
 $opacity-color: rgba(100, 100, 100, 0.5);
 $hover-color: lightgrey;
 
@@ -15,6 +16,7 @@ body {
   color: white;
   margin: 0;
 }
+
 .home-page {
   background-image: url(../img/bg.png);
   background-size: cover;
@@ -22,18 +24,21 @@ body {
   height: 100vh;
   margin-top: 0;
 }
+
 header {
   display: grid;
   grid-template-columns: auto 1fr auto;
   padding: 20px 20px 0 20px;
   align-items: center;
 }
+
 .logo {
   a {
     @include linkStyle($main-font, white, 20px, none, 900);
     text-transform: uppercase;
   }
 }
+
 nav {
   .menu {
     display: flex;
@@ -48,6 +53,7 @@ nav {
     &:last-child {
       margin-right: 0;
     }
+
     a {
       @include linkStyle($main-font, white, 18px, none, 400);
 
@@ -57,12 +63,14 @@ nav {
     }
   }
 }
+
 .extra-menu {
   background-color: $opacity-color;
   padding: 5px;
   height: 40px;
   border-radius: 5px;
 }
+
 .home-page-main {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -92,5 +100,20 @@ nav {
   h1 {
     font-size: 150px;
     letter-spacing: 15px;
+  }
+}
+
+.home-page-footer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-left: 20px;
+  margin-top: 110px;
+
+  .footer-places {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    column-gap: 50px;
+    justify-content: center;
+    padding-right: 5px;
   }
 }
